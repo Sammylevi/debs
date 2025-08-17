@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="Utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Just For Debs</title>
+
+    <style>
+      body {
+        font-family: "Dancing Script", cursive;
+        margin: 0;
+        padding: 0;
+        color: #f0f0f0;
+      }
+
+      .section {
+        @media only screen and (max-width: 767px) {
+          background: url(/bg5.jpg);
+          background-position-x: right;
+        }
+      }
+
+      .proposal {
+        background: url(/bg4.jpg);
+      }
+
+      .hero {
+        text-align: center;
+        padding: 100px 20px;
+        background: url(/bg4.jpg);
+        background-size: cover;
+      }
+
+      .hero h1 {
+        font-size: 3em;
+        font-weight: bold;
+      }
+
+      .hero p {
+        font-size: 1.5em;
+      }
+
+      .letter {
+        font-size: 40px;
+      }
+
+      .section {
+        padding: 50px 20px;
+      }
+
+      .attribute {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        @media only screen and (max-width: 767px) {
+          display: inline-block;
+        }
+      }
+
+      .attribute img {
+        width: 100%;
+        height: 10%;
+        /* margin-right: 20px; */
+        border-radius: 20px;
+
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+
+      .attribute p {
+        font-size: 30px;
+      }
+
+      .proposal {
+        text-align: center;
+        padding: 100px 20px;
+        background: pink;
+        color: black;
+      }
+
+      .proposal h2 {
+        font-size: 2.5em;
+      }
+
+      .buttons {
+        margin-top: 20px;
+      }
+
+      .buttons a {
+        padding: 10px 20px;
+        background: #f90b0b;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <h1>Hey Debs, you're truly one of a kind!</h1>
+      <p>I made this just for you. Let me show you why you're amazing.</p>
+    </div>
+
+    <div class="section">
+      <div class="attribute">
+        <div>
+          <h2 class="letter">D- Dependable</h2>
+          <p>
+            You've always been my safe space, someone I can trust no matter
+            what.
+          </p>
+        </div>
+        <img src="/debs 1.jpg" alt="Dependable" />
+      </div>
+
+      <div class="attribute">
+        <div>
+          <h2 class="letter">E - Elegant</h2>
+          <p>The way you carry yourself brings beauty to every moment.</p>
+        </div>
+
+        <img src="/debs 5.jpg" alt="Elegant" />
+      </div>
+
+      <div class="attribute">
+        <div>
+          <h2 class="letter">B - Beautiful</h2>
+          <p>Your mind and creativity inspire me every single day.</p>
+        </div>
+        <img src="/debs 3.jpg" alt="Beatiful" />
+      </div>
+
+      <div class="attribute">
+        <div>
+          <h2 class="letter">O - Outstanding</h2>
+          <p>You shine in everything you do, big or small.</p>
+        </div>
+        <img src="/debs 4.jpg" alt="Outstanding" />
+      </div>
+
+      <div class="attribute">
+        <div>
+          <h2 class="letter">R - Radiant</h2>
+          <p>Your smile lights up my whole world.</p>
+        </div>
+        <img src="/dbs 2.jpg" alt="Radiant" />
+      </div>
+
+      <div class="attribute">
+        <div>
+          <h2 class="letter">A - Admirable</h2>
+          <p>The values you live by inspire me to be better.</p>
+        </div>
+        <img src="/debs 6.jpg" alt="Admirable" />
+      </div>
+
+      <div class="attribute">
+        <div>
+          <h2 class="letter">H - Heartwarming</h2>
+          <p>Being with you feels like home.</p>
+        </div>
+        <img src="/debs 8.jpg" alt="Heartwarming" />
+      </div>
+    </div>
+
+    <div class="proposal">
+      <h1>My Wish!</h1>
+      <h3>
+        Debs, you are home to me, and I want you to always be my home. Would you
+        do me the honor of being my girlfriend, queen, safe space, and my
+        everything?
+      </h3>
+      <div class="buttons">
+        <a id="play-button" href="whatsapp://send?text=Yes">Yes</a>
+        <a href="whatsapp://send?text=No">No</a>
+      </div>
+    </div>
+    <audio id="background-music" src="halo.mp3" loop></audio>
+
+    <script>
+      document
+        .getElementById("play-button")
+        .addEventListener("click", function () {
+          const audio = document.getElementById("background-music");
+          audio.play();
+        });
+    </script>
+  </body>
+</html>
